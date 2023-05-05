@@ -9,7 +9,6 @@ function copyDir(){
     
     fs.promises.readdir((path.join(__dirname, 'files-copy'))).then(arr=>{
         arr.forEach( el=>{
-            console.log(el)
                 fs.unlink(path.join(__dirname, 'files-copy', el), err =>{
                     if(err) throw err; 
                 })

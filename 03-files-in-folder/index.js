@@ -13,5 +13,4 @@ secretFolderDir.then(arr=>{
 
         }
     })
-
 })
